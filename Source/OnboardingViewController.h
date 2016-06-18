@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "OnboardingContentViewController.h"
-@import MediaPlayer;
+//@import MediaPlayer;
 
 @interface OnboardingViewController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate, UIScrollViewDelegate, OnboardingContentViewControllerDelegate>
 
@@ -87,13 +87,13 @@
 /**
  * @brief Determines whether or not the movie player stops playing when the view disappears.
  */
-@property (nonatomic) BOOL stopMoviePlayerWhenDisappear;
+//@property (nonatomic) BOOL stopMoviePlayerWhenDisappear;
 
 
 /**
  * @brief The movie player controller used to play background movies.
  */
-@property (nonatomic) MPMoviePlayerController *moviePlayerController;
+//@property (nonatomic) MPMoviePlayerController *moviePlayerController;
 
 
 /**
@@ -120,14 +120,14 @@
  * @brief Convenience class initializer for onboarding with a backround video.
  * @return An instance of OnboardingViewController with the provided background video and content view controllers.
  */
-+ (instancetype)onboardWithBackgroundVideoURL:(NSURL *)backgroundVideoURL contents:(NSArray *)contents;
+//+ (instancetype)onboardWithBackgroundVideoURL:(NSURL *)backgroundVideoURL contents:(NSArray *)contents;
 
 
 /**
  * @brief Initializer for onboarding with a backround video.
  * @return An instance of OnboardingViewController with the provided background video and content view controllers.
  */
-- (instancetype)initWithBackgroundVideoURL:(NSURL *)backgroundVideoURL contents:(NSArray *)contents;
+//- (instancetype)initWithBackgroundVideoURL:(NSURL *)backgroundVideoURL contents:(NSArray *)contents;
 
 
 /**

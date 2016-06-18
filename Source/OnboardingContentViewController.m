@@ -35,7 +35,7 @@ NSString * const kOnboardActionButtonAccessibilityIdentifier = @"OnboardActionBu
 @interface OnboardingContentViewController ()
 
 @property (nonatomic, strong) UIImageView *thumbnailImageView;
-@property (nonatomic, strong) MPMoviePlayerController *moviePlayerController;
+//@property (nonatomic, strong) MPMoviePlayerController *moviePlayerController;
 @property (nonatomic, strong) NSURL *videoURL;
 
 @end
@@ -123,17 +123,17 @@ NSString * const kOnboardActionButtonAccessibilityIdentifier = @"OnboardActionBu
     self.buttonActionHandler = actionBlock ?: ^(OnboardingViewController *controller){};
 
     // Movie player
-    if (videoURL) {
-        self.videoURL = videoURL;
-
-        self.moviePlayerController = [MPMoviePlayerController new];
-        self.moviePlayerController.contentURL = self.videoURL;
-        self.moviePlayerController.repeatMode = MPMovieRepeatModeOne;
-        self.moviePlayerController.controlStyle = MPMovieControlStyleNone;
-
-        self.thumbnailImageView = [[UIImageView alloc] initWithImage:[self thumbnailImageForVideo:self.videoURL]];
-        self.thumbnailImageView.contentMode = UIViewContentModeScaleAspectFit;
-    }
+//    if (videoURL) {
+//        self.videoURL = videoURL;
+//
+//        self.moviePlayerController = [MPMoviePlayerController new];
+//        self.moviePlayerController.contentURL = self.videoURL;
+//        self.moviePlayerController.repeatMode = MPMovieRepeatModeOne;
+//        self.moviePlayerController.controlStyle = MPMovieControlStyleNone;
+//
+//        self.thumbnailImageView = [[UIImageView alloc] initWithImage:[self thumbnailImageForVideo:self.videoURL]];
+//        self.thumbnailImageView.contentMode = UIViewContentModeScaleAspectFit;
+//    }
     
     // Auto-navigation
     self.movesToNextViewController = NO;
@@ -166,10 +166,10 @@ NSString * const kOnboardActionButtonAccessibilityIdentifier = @"OnboardActionBu
     self.view.backgroundColor = [UIColor clearColor];
 
     // Add all our subviews
-    if (self.videoURL != nil) {
-        [self.moviePlayerController.backgroundView addSubview:self.thumbnailImageView];
-        [self.view addSubview:self.moviePlayerController.view];
-    }
+//    if (self.videoURL != nil) {
+//        [self.moviePlayerController.backgroundView addSubview:self.thumbnailImageView];
+//        [self.view addSubview:self.moviePlayerController.view];
+//    }
 
     [self.view addSubview:self.iconImageView];
     [self.view addSubview:self.titleLabel];
@@ -211,10 +211,10 @@ NSString * const kOnboardActionButtonAccessibilityIdentifier = @"OnboardActionBu
     }
     
     // If we have a video, start playing
-    if (self.moviePlayerController.playbackState != MPMoviePlaybackStatePlaying) {
-        self.moviePlayerController.currentPlaybackTime = 0.0;
-        [self.moviePlayerController play];
-    }
+//    if (self.moviePlayerController.playbackState != MPMoviePlaybackStatePlaying) {
+//        self.moviePlayerController.currentPlaybackTime = 0.0;
+//        [self.moviePlayerController play];
+//    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -239,9 +239,9 @@ NSString * const kOnboardActionButtonAccessibilityIdentifier = @"OnboardActionBu
     }
     
     // If we have a video, stop playing
-    if (self.moviePlayerController.playbackState != MPMoviePlaybackStateStopped) {
-        [self.moviePlayerController stop];
-    }
+//    if (self.moviePlayerController.playbackState != MPMoviePlaybackStateStopped) {
+//        [self.moviePlayerController stop];
+//    }
 }
 
 
@@ -250,9 +250,9 @@ NSString * const kOnboardActionButtonAccessibilityIdentifier = @"OnboardActionBu
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
 
-    if (self.videoURL) {
-        self.moviePlayerController.view.frame = self.view.frame;
-    }
+//    if (self.videoURL) {
+//        self.moviePlayerController.view.frame = self.view.frame;
+//    }
 
     if (self.thumbnailImageView) {
         self.thumbnailImageView.frame = self.view.frame;
@@ -284,9 +284,9 @@ NSString * const kOnboardActionButtonAccessibilityIdentifier = @"OnboardActionBu
 
 - (void)handleAppEnteredForeground {
     //If the movie player is paused, as it does by default when backgrounded, start playing again.
-    if (self.moviePlayerController.playbackState == MPMoviePlaybackStatePaused) {
-        [self.moviePlayerController play];
-    }
+//    if (self.moviePlayerController.playbackState == MPMoviePlaybackStatePaused) {
+//        [self.moviePlayerController play];
+//    }
 }
 
 

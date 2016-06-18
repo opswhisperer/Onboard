@@ -109,7 +109,7 @@ static NSString * const kSkipButtonText = @"Skip";
     self.skipButton.titleLabel.adjustsFontSizeToFitWidth = YES;
 
     // Create the movie player controller
-    self.moviePlayerController = [MPMoviePlayerController new];
+    //self.moviePlayerController = [MPMoviePlayerController new];
     
     // Handle when the app enters the foreground.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleAppEnteredForeground) name:UIApplicationWillEnterForegroundNotification object:nil];
@@ -131,17 +131,17 @@ static NSString * const kSkipButtonText = @"Skip";
     [super viewWillAppear:animated];
     
     // if we have a video URL, start playing
-    if (_videoURL) {
-        [self.moviePlayerController play];
-    }
+//    if (_videoURL) {
+//        [self.moviePlayerController play];
+//    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-    if (self.moviePlayerController.playbackState == MPMoviePlaybackStatePlaying && self.stopMoviePlayerWhenDisappear) {
-        [self.moviePlayerController stop];
-    }
+//    if (self.moviePlayerController.playbackState == MPMoviePlaybackStatePlaying && self.stopMoviePlayerWhenDisappear) {
+//        [self.moviePlayerController stop];
+//    }
 }
 
 - (void)generateView {
@@ -199,15 +199,15 @@ static NSString * const kSkipButtonText = @"Skip";
     }
     
     // otherwise send the video view to the back if we have one
-    else if (_videoURL) {
-        self.moviePlayerController.contentURL = _videoURL;
-        self.moviePlayerController.view.frame = _pageVC.view.frame;
-        self.moviePlayerController.repeatMode = MPMovieRepeatModeOne;
-        self.moviePlayerController.controlStyle = MPMovieControlStyleNone;
-        
-        [_pageVC.view addSubview:self.moviePlayerController.view];
-        [_pageVC.view sendSubviewToBack:self.moviePlayerController.view];
-    }
+//    else if (_videoURL) {
+//        self.moviePlayerController.contentURL = _videoURL;
+//        self.moviePlayerController.view.frame = _pageVC.view.frame;
+//        self.moviePlayerController.repeatMode = MPMovieRepeatModeOne;
+//        self.moviePlayerController.controlStyle = MPMovieControlStyleNone;
+//        
+//        [_pageVC.view addSubview:self.moviePlayerController.view];
+//        [_pageVC.view sendSubviewToBack:self.moviePlayerController.view];
+//    }
     
     // create and configure the page control
     self.pageControl.frame = CGRectMake(0, CGRectGetMaxY(self.view.frame) - self.underPageControlPadding - kPageControlHeight, self.view.frame.size.width, kPageControlHeight);
@@ -234,9 +234,9 @@ static NSString * const kSkipButtonText = @"Skip";
 - (void)handleAppEnteredForeground {
     // If the movie player is paused, as it does by default when backgrounded, start
     // playing again.
-    if (self.moviePlayerController.playbackState == MPMoviePlaybackStatePaused) {
-        [self.moviePlayerController play];
-    }
+//    if (self.moviePlayerController.playbackState == MPMoviePlaybackStatePaused) {
+//        [self.moviePlayerController play];
+//    }
 }
 
 

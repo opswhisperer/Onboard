@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@import MediaPlayer;
+//@import MediaPlayer;
 
 @class OnboardingViewController;
 @class OnboardingContentViewController;
@@ -158,21 +158,21 @@ typedef void (^action_callback)(OnboardingViewController *onboardController);
  * @brief Convenience class initializer for creating an onboarding content view controller with a video.
  * @return An instance of OnboardingViewController with the provided information.
  */
-+ (instancetype)contentWithTitle:(NSString *)title body:(NSString *)body videoURL:(NSURL *)videoURL buttonText:(NSString *)buttonText action:(dispatch_block_t)action;
+//+ (instancetype)contentWithTitle:(NSString *)title body:(NSString *)body videoURL:(NSURL *)videoURL buttonText:(NSString *)buttonText action:(dispatch_block_t)action;
 
 
 /**
  * @brief Initializer for creating an onboarding content view controller with a video.
  * @return An instance of OnboardingViewController with the provided information.
  */
-- (instancetype)initWithTitle:(NSString *)title body:(NSString *)body videoURL:(NSURL *)videoURL buttonText:(NSString *)buttonText action:(dispatch_block_t)action;
+//- (instancetype)initWithTitle:(NSString *)title body:(NSString *)body videoURL:(NSURL *)videoURL buttonText:(NSString *)buttonText action:(dispatch_block_t)action;
 
 
 /**
  * @brief Convenience class initializer for creating an onboarding content view controller with a video and an action_callback block.
  * @return An instance of OnboardingViewController with the provided information.
  */
-+ (instancetype)contentWithTitle:(NSString *)title body:(NSString *)body videoURL:(NSURL *)videoURL buttonText:(NSString *)buttonText actionBlock:(action_callback)actionBlock;
+//+ (instancetype)contentWithTitle:(NSString *)title body:(NSString *)body videoURL:(NSURL *)videoURL buttonText:(NSString *)buttonText actionBlock:(action_callback)actionBlock;
 
 
 /**

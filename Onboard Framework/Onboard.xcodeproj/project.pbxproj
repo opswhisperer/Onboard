@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90D232FC1D15CB7F0081D274 /* OnboardingContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5388B61CAC0D4800D57B29 /* OnboardingContentViewController.m */; };
+		90D232FD1D15CB840081D274 /* OnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5388B81CAC0D4800D57B29 /* OnboardingViewController.m */; };
 		BC5388B91CAC0D4800D57B29 /* OnboardingContentViewController_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BC5388B41CAC0D4800D57B29 /* OnboardingContentViewController_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC5388BA1CAC0D4800D57B29 /* OnboardingContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BC5388B51CAC0D4800D57B29 /* OnboardingContentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC5388BB1CAC0D4800D57B29 /* OnboardingContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5388B61CAC0D4800D57B29 /* OnboardingContentViewController.m */; };
 		BC5388BC1CAC0D4800D57B29 /* OnboardingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BC5388B71CAC0D4800D57B29 /* OnboardingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC5388BD1CAC0D4800D57B29 /* OnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5388B81CAC0D4800D57B29 /* OnboardingViewController.m */; };
-		BC5388C11CAC0DED00D57B29 /* Onboard.h in Headers */ = {isa = PBXBuildFile; fileRef = BC5388C01CAC0DED00D57B29 /* Onboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC2029201CAC0BC9006EB1F3 /* Onboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Onboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5388B21CAC0C1A00D57B29 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC5388B41CAC0D4800D57B29 /* OnboardingContentViewController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnboardingContentViewController_Private.h; path = ../../Source/OnboardingContentViewController_Private.h; sourceTree = "<group>"; };
-		BC5388B51CAC0D4800D57B29 /* OnboardingContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnboardingContentViewController.h; path = ../../Source/OnboardingContentViewController.h; sourceTree = "<group>"; };
-		BC5388B61CAC0D4800D57B29 /* OnboardingContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OnboardingContentViewController.m; path = ../../Source/OnboardingContentViewController.m; sourceTree = "<group>"; };
-		BC5388B71CAC0D4800D57B29 /* OnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnboardingViewController.h; path = ../../Source/OnboardingViewController.h; sourceTree = "<group>"; };
-		BC5388B81CAC0D4800D57B29 /* OnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OnboardingViewController.m; path = ../../Source/OnboardingViewController.m; sourceTree = "<group>"; };
-		BC5388C01CAC0DED00D57B29 /* Onboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Onboard.h; sourceTree = "<group>"; };
+		BC5388B41CAC0D4800D57B29 /* OnboardingContentViewController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnboardingContentViewController_Private.h; path = ../Source/OnboardingContentViewController_Private.h; sourceTree = "<group>"; };
+		BC5388B51CAC0D4800D57B29 /* OnboardingContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnboardingContentViewController.h; path = ../Source/OnboardingContentViewController.h; sourceTree = "<group>"; };
+		BC5388B61CAC0D4800D57B29 /* OnboardingContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OnboardingContentViewController.m; path = ../Source/OnboardingContentViewController.m; sourceTree = "<group>"; };
+		BC5388B71CAC0D4800D57B29 /* OnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnboardingViewController.h; path = ../Source/OnboardingViewController.h; sourceTree = "<group>"; };
+		BC5388B81CAC0D4800D57B29 /* OnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OnboardingViewController.m; path = ../Source/OnboardingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +38,6 @@
 		BC2029161CAC0BC9006EB1F3 = {
 			isa = PBXGroup;
 			children = (
-				BC5388C01CAC0DED00D57B29 /* Onboard.h */,
 				BC5388B21CAC0C1A00D57B29 /* Info.plist */,
 				BC5388A71CAC0C1100D57B29 /* Source */,
 				BC2029211CAC0BC9006EB1F3 /* Products */,
@@ -74,7 +71,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5388C11CAC0DED00D57B29 /* Onboard.h in Headers */,
 				BC5388BA1CAC0D4800D57B29 /* OnboardingContentViewController.h in Headers */,
 				BC5388B91CAC0D4800D57B29 /* OnboardingContentViewController_Private.h in Headers */,
 				BC5388BC1CAC0D4800D57B29 /* OnboardingViewController.h in Headers */,
@@ -113,6 +109,8 @@
 				TargetAttributes = {
 					BC20291F1CAC0BC9006EB1F3 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4ZBD65B36X;
+						DevelopmentTeamName = "Robert Bell";
 					};
 				};
 			};
@@ -148,8 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5388BB1CAC0D4800D57B29 /* OnboardingContentViewController.m in Sources */,
-				BC5388BD1CAC0D4800D57B29 /* OnboardingViewController.m in Sources */,
+				90D232FC1D15CB7F0081D274 /* OnboardingContentViewController.m in Sources */,
+				90D232FD1D15CB840081D274 /* OnboardingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
